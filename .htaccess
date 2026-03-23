@@ -1,0 +1,12 @@
+Options -MultiViews
+RewriteEngine On
+
+# Redirect root to login page
+RewriteRule ^$ logi.html [L,R=302]
+
+# Allow direct access to existing files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route API calls to PHP files
+RewriteRule ^api/(.*)$ api/$1 [L]
