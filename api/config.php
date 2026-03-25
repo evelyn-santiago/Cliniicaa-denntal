@@ -1,14 +1,14 @@
 <?php
 // ============================================================
 //  Configuración de conexión a MySQL
-//  Ajusta estos valores según tu instalación de XAMPP
+//  Ajusta estos valores según tu instalación de XAMPP o Azure MySQL
 // ============================================================
 
-define('DB_HOST',     getenv('DB_HOST')     ?: 'localhost');
+define('DB_HOST',     getenv('DB_HOST')     ?: 'clinic-db-final-2026.mysql.database.azure.com');
 define('DB_PORT',     getenv('DB_PORT')     ?: '3306');
 define('DB_NAME',     getenv('DB_NAME')     ?: 'clinicadental');
-define('DB_USER',     getenv('DB_USER')     ?: 'root');       // Usuario por defecto en XAMPP
-define('DB_PASSWORD', getenv('DB_PASSWORD') ?: 'nayeli21');   // Contraseña de root MySQL
+define('DB_USER',     getenv('DB_USER')     ?: 'root@clinic-db-final-2026');       // Ajusta a tu usuario de Azure MySQL
+define('DB_PASSWORD', getenv('DB_PASSWORD') ?: 'nayeli21');   // Ajusta a la contraseña de Azure MySQL
 define('DB_CHARSET',  'utf8mb4');
 
 // ============================================================
