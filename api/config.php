@@ -4,7 +4,7 @@
 //  Ajusta estos valores según tu instalación de XAMPP o Azure MySQL
 // ============================================================
 
-define('DB_HOST',     getenv('DB_HOST')     ?: 'clinic-db-final-2026.mysql.database.azure.com');
+define('DB_HOST',     getenv('DB_HOST')     ?: 'sql300.infinityfree.com');
 define('DB_PORT',     getenv('DB_PORT')     ?: '3306');
 define('DB_NAME',     getenv('DB_NAME')     ?: 'clinicadental');
 define('DB_USER',     getenv('DB_USER')     ?: 'root@clinic-db-final-2026');       // Ajusta a tu usuario de Azure MySQL
